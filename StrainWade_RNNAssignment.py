@@ -32,10 +32,10 @@ num_samples = 15000
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Load Data Section
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-dataframe = pd.read_csv(filename, delimiter=',')
-dataframe = dataframe.drop(columns=['publish_date'])
-dataframe = dataframe.sample(n=num_samples, replace=False, random_state=32)   # shrink number of headlines, for computer efficiency
-dataframe.to_csv(cleaned_filename, index=False, header=False)
+# dataframe = pd.read_csv(filename, delimiter=',')
+# dataframe = dataframe.drop(columns=['publish_date'])
+# dataframe = dataframe.sample(n=num_samples, replace=False, random_state=32)   # shrink number of headlines, for computer efficiency
+# dataframe.to_csv(cleaned_filename, index=False, header=False)
 
 text = open(cleaned_filename, encoding='utf8').read()
 # words = text_to_word_sequence(text)
